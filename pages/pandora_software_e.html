@@ -1,0 +1,109 @@
+<!DOCTYPE html/>
+<html lang="en-CA"/>
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="/favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="../style_fgm.css" />
+<script type="text/javascript" src="js/dropdownMenu.js"></script>
+<script type="text/javascript" src="js/includes.js"></script>
+<script type="text/javascript" src="js/tabContent.js"></script>
+<title>FireGrowthModel.ca - Pandora</title>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<a href="index.html" id="left">
+<img src="images/logo_fgm.png" alt="FireGrowthModel.ca"/>
+</a>
+<h1 id="left">Ahead of Wildland Fire</h1>
+</div>
+
+<div id="banner">
+	<h1>Pandora</h1>
+	<img src="images/pandora_banner.jpg" alt="" />
+</div>
+   <div include-html="parts/dropdownMenu.html"></div>
+
+
+
+<div id="content">
+
+<h1>Software</h1>
+
+<body onload="init()">
+  
+    <ul id="tabs">
+      <li><a href="software_e.php.html#downloads">Downloads</a></li>
+      <li><a href="software_e.php.html#requirements">Requirements</a></li>
+      <li><a href="software_e.php.html#release_notes">Release Notes</a></li>
+    </ul>
+
+    <div class="tabContent" id="downloads">
+	  <div>
+
+  <p>Pandora 6.2.4 was released on January 28, 2019. Pandora parameter files from versions before 3.6 may not work with 6.2.4. Check the help file for details.</p>
+  
+  <ul class="download">
+	<li><a href="downloads/pandora6.2.4.zip">Download Pandora 6.2.4</a></li>
+  </ul>
+  
+  <h3>Installation Instructions</h3>
+  
+  <ul>
+	<li>The Prometheus COM must be installed in order for Pandora to run. Note that the Prometheus COM is not the same as the Prometheus application, though it is installed at the same time.</li>
+  </ul>
+
+</div>    </div>
+	
+    <div class="tabContent" id="requirements">
+	  <div>
+
+	<p>Your computer must meet or exceed the system requirements for Prometheus in order to install and use Pandora. See under "Requirements" on the <a href="../prometheus/software_e.php.html">Prometheus software page</a>.</p>
+
+</div>    </div>
+
+    <div class="tabContent" id="release_notes">
+	  <div>
+
+<h3>Changes in Pandora 6.2.4</h3>
+
+	<h4>New Features</h4>
+	
+	<ul>
+		<li>The length of the time step, previously fixed at 1 hour, can now be specified in minutes.</li>
+		<li>FBP grids can be saved as floating point or integer.</li>
+		<li>The burned/unburned grid can be exported after any specified number of time steps, as was already the case for perimeter shape files.</li>
+  </ul>
+
+	<h4>Bug Fixes</h4>
+	
+	<ul>
+		<li>A bug that resulted in the first time step being dropped has been fixed.</li>
+		<li>Bugs affecting perimeter shape files, FBP grids, and interpolation methods have been fixed.</li>
+		<li>The help file has been corrected to accurately reflect how the hourly FFMC is calculated.</li>
+	</ul>
+
+</div>    </div>
+
+  </div>
+
+<div id="footer">
+<ul>
+<li id="left"><a href="software_e.php.html#top">Top of Page</a></li>
+<li class="right" id="footer-date">Last Modified: 2022-03-16</li>
+</ul>
+</div>
+
+</div>
+</div>
+<script type="text/javascript" defer>
+  includeHTML();
+  waitForElm('#menu').then(() => {
+      dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+  });       
+</script>
+</body>
+</html>

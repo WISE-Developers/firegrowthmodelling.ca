@@ -1,0 +1,94 @@
+<!DOCTYPE html/>
+<html lang="en-CA"/>
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="../style_fgm.css" />
+<script type="text/javascript" src="js/dropdownMenu.js"></script>
+<script type="text/javascript" src="js/includes.js"></script>
+<script type="text/javascript" src="js/tabContent.js"></script>
+<title>FireGrowthModel.ca - Prometheus</title>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<a href="index.html" id="left">
+<img src="images/logo_fgm.png" alt="FireGrowthModel.ca"/>
+</a>
+<h1 id="left">Ahead of Wildland Fire</h1>
+</div>
+
+<div id="banner">
+	<h1>Prometheus</h1>
+	<img src="images/prometheus_banner.jpg" alt="" />
+</div>
+   <div include-html="parts/dropdownMenu.html"></div>
+
+
+
+<div id="content">
+
+<h1>Overview</h1>
+
+  <img class="right" src="images/logo_prometheus.png" alt="" />
+
+<p>Prometheus is a deterministic wildland fire growth simulation model based on the Fire Weather Index (FWI) and Fire Behaviour Prediction (FBP) sub-systems of the Canadian Forest Fire Danger Rating System (CFFDRS). The model computes spatially-explicit fire behaviour and spread outputs given heterogeneous fuel, topography and weather conditions. All spatial outputs are compatible with Geographic Information Systems. <a href="burnp3_documentation_e.html">Learn more...</a></p>
+  
+<h2>Potential Applications</h2>
+
+  <ul>
+    <li>Forecasting wildland fire growth for operational decision support.</li>
+	<li>Assessing the effectiveness of alternative fuel management strategies.</li>
+	<li>Planning prescribed burns.</li>
+	<li>Providing forensic support for wildfire investigations.</li>
+    <li>Studying the role of fire in establishing and maintaining landscape patterns.</li>
+    <li>Providing spatial and temporal estimates of smoke emissions.</li>
+	<li>Examining the impact of climate change scenarios on area burned.</li>
+	<li>Supplementing fire behaviour training and education programs.</li>
+  </ul>
+  
+<h2>Prometheus COM</h2>
+
+<p>COM (Common Object Model) is Microsoft Windows programming standard that allows object-oriented COM components (Dynamic Link Libraries) to be re-used in different software applications and languages without sharing source code. Prometheus uses this component-based software architecture. The important principles of COM include:</p>
+
+  <ul>
+	<li>Reuse of the component objects,</li>
+	<li>Interoperability of the binary standard,</li>
+	<li>Allowance for distributed capabilities.</li>
+  </ul>
+
+<p>Prometheus is engineered using five separate COMs. These COMs are called low-level interfaces and include:</p>
+
+  <ul>
+	<li>FuelCOM</li>
+	<li>FWICOM</li>
+	<li>GridCOM</li>
+	<li>FireEngine</li>
+	<li>WeatherCOM</li>
+  </ul>
+
+<p>To facilitate the use of these low-level interfaces, an umbrella or wrapper COM was developed. This high-level interface is called PrometheusCOM.  It provides a more user-friendly interface for programmers to communicate with the low level COMs. Examples of software applications that integrate <i>Prometheus</i>COM components include Burn-P3, Pandora, Pegasus, and SFMS. COM Programmer's Documentation can be accessed <a href="../resources/com/PrometheusCOM/index.html" target="blank">on-line</a>.</p>
+  
+</div>
+
+<div id="footer">
+<ul>
+<li id="left"><a href="burnp3_overview_e.html#top">Top of Page</a></li>
+<li class="right" id="footer-date">Last Modified: 2022-03-16</li>
+</ul>
+</div>
+
+</div>
+</div>
+<script type="text/javascript" defer>
+  includeHTML();
+  waitForElm('#menu').then(() => {
+      dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+  });       
+</script>
+</body>
+</html>

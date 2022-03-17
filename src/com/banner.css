@@ -1,0 +1,38 @@
+:root {
+	--main-bg-color: rgb(50, 38, 38);
+	--page-bg-color: rgb(63, 50, 50);
+	--footer-bg-color: rgb(93, 75, 75);
+	--header-bg-color: rgb(93, 75, 75);
+	--main-txt-color: rgb(240, 206, 206);
+	--footer-txt-color: rgb(240, 206, 206);
+	--page-title-color: rgb(252, 160, 0);
+	--main-title-color: rgb(242, 170, 44);
+	--main-link-color: rgb(85, 171, 246);
+	--file-info-color: rgb(7, 162, 82);
+	--table-header-bg-color: rgb(106, 34, 3);
+	--table-header-txt-color: rgb(255, 162, 0);
+	--tab-bg-color: rgb(137, 87, 0);
+	--tab-active-bg-color: rgb(255, 162, 0);
+	--tab-hover-bg-color:rgb(255, 225, 0);
+
+  }
+
+
+div.banner {
+	height:  70px;
+    background-image:url('nav_h.png');
+    background-repeat:repeat-x;
+	background-color: var(--page-bg-color);
+	margin: 0px;
+	border-bottom: 1px solid var(--page-bg-color);
+}
+
+div.banner img {
+	float: left;
+	margin: 10px 15px;	
+	padding: 0px;	
+}
+
+div.bannertitle {
+	padding-top: 10px;
+}

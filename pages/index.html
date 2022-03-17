@@ -1,0 +1,71 @@
+<!DOCTYPE html />
+<html lang="en-CA" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="firegrowthmodel.ca is home to Prometheus: the Canadian Wildland Fire Growth Simulation Model and PrometheusCOM applications." />
+    <meta name="keywords"
+        content="burn probability, cwfgm, decision support tool, elliptical fire growth, elliptical fire spread, fire behavior, fire ellipse, fire growth, fire growth model, fire growth simulation, fire management software, fire management tool, fire model, fire percolation, fire prediction, fire prediction software, fire propagation model, fire simulation, fire simulation software, fire simulator, firelet, landscape fire, landscape fire model, natural disturbance, prometheus, spatially explicit model, spatial fire model, wave propagation,  wavelet, wildfire, wildfire behavior, wildfire growth prediction, wildfire model, wildfire software, wildfire spread" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/style_fgm.css" />
+    <script src="js/dropdownMenu.js"></script>
+    <script src="js/tabContent.js"></script>
+    <script src="js/includes.js"></script>
+    <title>FireGrowthModel.ca - Home</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <a href="index.html" id="left">
+                <img src="images/logo_fgm.png" alt="FireGrowthModel.ca" />
+            </a>
+            <h1 id="left">Ahead of Wildland Fire</h1>
+        </div>
+
+        <div id="banner">
+            <img src="images/main_banner.jpg" alt="" />
+            <h1>Home</h1>
+        </div>
+
+        <div include-html="parts/dropdownMenu.html"></div>
+
+
+        <div id="content">
+
+            <h1>Welcome to FireGrowthModel.ca</h1>
+
+            <p>FireGrowthModel.ca is home to Prometheus: the Canadian Wildland Fire Growth Simulation Model, and other
+                fire models that utilize the Prometheus COM. Prometheus is the result of a national project endorsed by
+                the <a href="http://www.ciffc.ca" target="new">Canadian Interagency Forest Fire Centre</a> and its
+                members.</p>
+
+            <p><a href="https://www.alberta.ca/agriculture-and-forestry.aspx" target="new">Alberta Agriculture and
+                    Forestry</a> is now the lead agency and custodian of Prometheus. The <a
+                    href="http://www.nrcan.gc.ca/forests" target="new">Canadian Forest Service</a> maintains Burn-P3 and
+                Pandora in collaboration with forest and fire management agencies across Canada.</p>
+
+            <p>Considerable time and effort are spent to ensure these software applications can be used by fire
+                management agencies across Canada and other interested stakeholders including natural resource managers,
+                planners, and researchers. The lead agencies have also extended support to fire management agencies and
+                researchers outside of Canada.</p>
+
+            <p><img src="images/prometheus_simulation.jpg" alt="" /></p>
+
+        </div>
+
+        <div include-html="parts/footer_e.html"></div>
+
+    </div>
+    <script type="text/javascript" defer>
+        includeHTML();
+        waitForElm('#menu').then(() => {
+            dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+        });       
+    </script>
+</body>
+
+</html>

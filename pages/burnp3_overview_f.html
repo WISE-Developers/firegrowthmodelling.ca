@@ -1,0 +1,64 @@
+<!DOCTYPE html/>
+<html lang="en-CA"/>
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="/favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="../style_fgm.css" />
+<script type="text/javascript" src="js/dropdownMenu.js"></script>
+<script type="text/javascript" src="js/includes.js"></script>
+<script type="text/javascript" src="js/tabContent.js"></script>
+<title>FireGrowthModel.ca - Burn-P3</title>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<a href="index.html" id="left">
+<img src="../images/logo_fgm.png" alt="FireGrowthModel.ca" />
+</a>
+<h1 id="left">Avant l'incendie de forêt</h1>
+</div>
+
+<div id="banner">
+	<h1>Burn-P3</h1>
+	<img src="images/burnp3_banner.jpg" alt="" />
+</div>
+   <div include-html="parts/dropdownMenu.html"></div>
+
+
+  
+<div id="content">
+  <a class="right" href="burnp3_overview_e.html" lang="en">English</a>
+  
+
+<h1>Aper&#231u</h1>
+
+<img class="right" src="images/grid_output_burnp3.jpg" alt="" />
+
+<p>Burn-P3 (probabilité, prédiction et planification) est un modèle de simulation des incendies forestiers destiné à la gestion du territoire et à la recherche. Burn-P3 simule les allumages et la propagation d'un grand nombre de feux, et ce, à l'aide de Prometheus, un logiciel de propagation des incendies. Les données modélisées sont les combustibles forestiers, les données météorologiques, la topographie et les patrons d'allumages. Burn-P3 produit une carte des probabilités d'incendie couvrant l'entièreté d'un vaste territoire.</p>
+
+<p><ul>
+    <li>Logiciel d'application pour Microsoft Windows</li>
+    <li>Calcule les probabilités d'incendies sur de vastes territoires</li>
+    <li>Génère des cartes d'intensité des incendies</li>
+    <li>Extrait les statistiques des incendies simulés et leurs périmètres</li>
+</ul></p>
+
+<p><a href="burnp3_documentation_f.html">En apprendre d'avantage...</a></p>
+
+  </div>
+
+        <div include-html="parts/footer_e.html"></div>
+
+</div>
+</div>
+<script type="text/javascript" defer>
+  includeHTML();
+  waitForElm('#menu').then(() => {
+      dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+  });       
+</script>
+</body>
+</html>

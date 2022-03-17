@@ -1,0 +1,64 @@
+<!DOCTYPE html/>
+<html lang="en-CA"/>
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="/favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="../style_fgm.css" />
+<script type="text/javascript" src="js/dropdownMenu.js"></script>
+<script type="text/javascript" src="js/includes.js"></script>
+<script type="text/javascript" src="js/tabContent.js"></script>
+<title>FireGrowthModel.ca - Burn-P3</title>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<a href="index.html" id="left">
+<img src="../images/logo_fgm.png" alt="FireGrowthModel.ca" />
+</a>
+<h1 id="left">Avant l'incendie de forêt</h1>
+</div>
+
+<div id="banner">
+	<h1>Burn-P3</h1>
+	<img src="images/burnp3_banner.jpg" alt="" />
+</div>
+   <div include-html="parts/dropdownMenu.html"></div>
+
+
+  
+  <div id="content">
+     <a class="right" href="burnp3_documentation_e.html" lang="en">English</a>
+        
+	<h1>Documentation</h1>
+
+<table class="documentation">
+
+<tr>
+  <td><img src="images/user_manual_version_4.7.jpg" alt="" /></td>
+  <td>Ressources Naturelles Canada. 2017. Burn-P3 Version 4.7 Guide de l'utilisateur. 62 p. [ <a href="downloads/UMfr_BurnP3_V4_7.pdf" target="_blank">PDF</a> ]</td>
+</tr>
+
+<tr>
+  <td><img src="images/info_report_nor-x-405.jpg" alt="" /></td>
+  <td>Parisien, M.A.; Kafka, V.G.; Hirsch, K.G.; Todd, J.B.; Lavoie, S.G.; Maczek, P.D. 2005. Mapping wildfire susceptibility with the BURN-P3 simulation model. Nat. Resour. Can., Can. For. Serv., North. For. Cent., Edmonton, Alberta. Inf. Rep. NOR-X-405. 36 p. [ <a href="http://scf.rncan.gc.ca/publications?id=25627&lang=fr_CA"  target="_blank">http://scf.rncan.gc.ca/publications?id=25627&lang=fr_CA</a> ]</td>
+</tr>
+
+</table>
+
+  </div>
+
+        <div include-html="parts/footer_f.html"></div>
+
+</div>
+</div>
+<script type="text/javascript" defer>
+  includeHTML();
+  waitForElm('#menu').then(() => {
+      dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+  });       
+</script>
+</body>
+</html>

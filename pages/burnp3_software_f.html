@@ -1,0 +1,190 @@
+<!DOCTYPE html/>
+<html lang="en-CA"/>
+<head>
+<meta charset="UTF-8"/>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="/favicon.ico" /> 
+<link rel="stylesheet" type="text/css" href="../style_fgm.css" />
+<script type="text/javascript" src="js/dropdownMenu.js"></script>
+<script type="text/javascript" src="js/includes.js"></script>
+<script type="text/javascript" src="js/tabContent.js"></script>
+<title>FireGrowthModel.ca - Burn-P3</title>
+</head>
+<body>
+<div id="container">
+
+<div id="header">
+<a href="index.html" id="left">
+<img src="../images/logo_fgm.png" alt="FireGrowthModel.ca" />
+</a>
+<h1 id="left">Avant l'incendie de forêt</h1>
+</div>
+
+<div id="banner">
+	<h1>Burn-P3</h1>
+	<img src="images/burnp3_banner.jpg" alt="" />
+</div>
+   <div include-html="parts/dropdownMenu.html"></div>
+
+
+
+<div id="content">
+  <a class="right" href="software_e.php.html" lang="en">English</a>
+  
+
+<h1>Logiciel</h1>
+
+<body onload="init()">
+  
+    <ul id="tabs">
+      <li><a href="software_f.php.html#downloads">Téléchargements</a></li>
+      <li><a href="software_f.php.html#requirements">Configuration requise</a></li>
+      <li><a href="software_f.php.html#release_notes">Informations récentes</a></li>
+
+    </ul>
+
+    <div class="tabContent" id="downloads">
+	  <div>
+
+	<h3>Current Version</h3>
+
+	<p>Burn-P3 6.2.4.01 for 64-bit Windows operating systems was released July 19, 2019.</p>
+
+	<ul class="download">
+		<li><a href="downloads/BurnP3_6.2.4.01_2019-07-19_Francais.msi">Download Burn-P3 6.2.4</a></li>
+	</ul>
+	
+	<h3>Important Installation Instructions</h3>
+	
+	<ul>
+		<li>Install <a href="../prometheus/software_e.php.html">Prometheus 6.2.4</a> and all associated software prerequistes on a 64-bit Windows computer that meets or exceeds minimum system requirements and perform a system restart.</li>
+		<li>Log on to your computer as a system administrator.</li>
+		<li>Uninstall any previous version of the Burn-P3 application from your computer.</li>
+		<li>Close all open applications and run <b>BurnP3_6.2.4.01_2019-07-19_Francais</b> <span class="file">[MSI - 7.45 MB]</span>. A Setup Wizard will guide you through the installation.</li>
+	</ul>
+		
+	<h3>Sample Data Set</h3>
+
+	<p>Click the following link to download test files used in the Burn-P3 tutorial. These test files also serve as good examples when creating your own Burn-P3 data set.</p>
+
+	<ul>
+		<li><a href="downloads/fichiers_test_francaisV4_7.zip">fichiers_test_francaisV4_7</a> <span class="file"> [ZIP - 38.2 MB]</span></li>
+	</ul>
+	
+	<h3>Previous Releases</h3>
+
+	<ul>
+		<li><a href="downloads/BurnP3_6.2.4_2019-01-22_Francais.msi">BurnP3_6.2.4_2019-01-22_Francais</a><span class="file"> [MSI - 7.45 MB]</span></li>
+		<li><a href="downloads/BurnP3_4.7.4_2018-03-23_Francais.msi">BurnP3_4.7.4_2018-03-23_Francais</a><span class="file"> [MSI - 13.1 MB]</span></li>
+	</ul>
+
+</div>    </div>
+
+    <div class="tabContent" id="release_notes">
+	  <div>
+
+<h3>Changements dans Burn-P3 6.2.4</h3>
+
+  <h4>Nouvelles fonctionnalités</h4>
+
+	<ul>
+		<li>Revised Process Control to provide more options to the user.</li>
+		<li>Revised grid communication with Prometheus to use smaller and faster TIF files.</li>
+		<li>Improved error handling for grass curing communication to Prometheus.</li>
+		<li>Added routines to support changes to data recovery from Prometheus. Several routines were changed to allow fire front information to be collected from any display time in the simulation.</li>
+		<li>Made changes to support API changes to green up in Prometheus.</li>
+		<li>Added Julian date management to season structures to support changes to green up.</li>
+		<li>Added ISI threshold to burn conditions.</li>
+		<li>Added decimal place control for raw output tables. Currently hard-coded, could be added to user interface if required.</li>
+		<li>Refinements to projection file handling and projection information propagation.</li>
+		<li>Show TIF file extensions on file loading dialog boxes where appropriate.</li>
+	</ul>
+
+  <h4>Correction de bugs</h4>
+
+	<ul>
+		<li>Fixed bug associated with executing simulations beyond the end of a calendar year.</li>
+		<li>Fixed bug on fuel lookup table file load title.</li>
+		<li>Fixed bug which prevented changes to the season median dates in the dictionary.</li>
+	</ul>
+
+</div>    </div>
+	
+    <div class="tabContent" id="requirements">
+	  <div>
+
+
+	<p>Voici la configuration matérielle et logicielle requise au fonctionnement de Burn-P3.</p>
+
+	<table class="software">
+		<tr>
+			<th>Requirement</th>
+			<th>Minimum</th>
+			<th>Recommandé</th>
+		</tr>
+		<tr>
+			<td>Système d'exploitations*</td>
+			<td>Version 64 bits de Windows 7</td>
+			<td>Version 64 bits de Windows 10</td>
+		</tr>
+		<tr>
+			<td>Logiciels Prometheus</td>
+			<td>Version 6.2.4</td>
+			<td>Version 6.2.4</td>
+		</tr>
+		<tr>
+			<td>Logiciels Microsoft</td>
+			<td>.NET Framework 4.6</br>et</br>Visual C++ 2017 Redistribuable (x64)</td>
+			<td>.NET Framework 4.7</br>et</br>Visual C++ 2017 Redistribuable (x64)</td>
+		</tr>
+		<tr>
+			<td>Logiciels Oracle</td>
+			<td>Version 8 de Java 64 bits pour Windows</br>(Update 151)</td>	
+			<td>Version 8 de Java 64 bits pour Windows</br>(Update 191)</td>
+		</tr>
+		<tr>
+			<td>Logiciels Intel&#174;</td>
+			<td>2019 C++ Bibliothèque Redistribuable pour Windows (x64)</br>(Version initiale: 19.0.117)</td>
+			<td>2019 C++ Bibliothèque Redistribuable pour Windows (x64)</br>(Update 1: 19.1.144)</td>
+		</tr>
+		<tr>
+			<td>Processeur</td>
+			<td>4 coeurs</td>
+			<td>4 coeurs multifils</td>
+		</tr>
+		<tr>
+			<td>Mémoire vive (RAM)</td>
+			<td>6 Go</td>
+			<td>12 Go</td>
+		</tr>
+		<tr>
+			<td>Espace disque disponible</td>
+			<td>10 Go</td>
+			<td>500 Go</td>
+		</tr>
+	</table>
+
+	<p><i>*les systèmes d’exploitation de 32 bit ne sont plus supportés.</i></p>
+
+</div>    </div>
+
+  </div>
+
+<div id="footer">
+<ul>
+<li id="left"><a href="software_f.php.html#top">Haut de page</a></li>
+<li class="right" id="footer-date">Version à jour: 2022-03-16</li>
+</ul>
+</div>
+
+</div>
+</div>
+<script type="text/javascript" defer>
+  includeHTML();
+  waitForElm('#menu').then(() => {
+      dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+  });       
+</script>
+</body>
+</html>

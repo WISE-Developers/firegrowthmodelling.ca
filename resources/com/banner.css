@@ -1,0 +1,18 @@
+div.banner {
+	height:  70px;
+    background-image:url('nav_h.png');
+    background-repeat:repeat-x;
+	background-color: #FAFAFA;
+	margin: 0px;
+	border-bottom: 1px solid #D5D5D5;
+}
+
+div.banner img {
+	float: left;
+	margin: 10px 15px;	
+	padding: 0px;	
+}
+
+div.bannertitle {
+	padding-top: 10px;
+}
