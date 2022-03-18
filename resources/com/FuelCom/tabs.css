@@ -1,5 +1,5 @@
 .tabs, .tabs2, .tabs3 {
-    background-image: url('tab_b.png');
+    background-image: url('tab_s.png');
     width: 100%;
     z-index: 101;
     font-size: 13px;
@@ -22,7 +22,7 @@
 .tablist li {
     float: left;
     display: table-cell;
-    background-image: url('tab_b.png');
+    background-image: url('tab_s.png');
     line-height: 36px;
     list-style: none;
 }
@@ -31,7 +31,7 @@
     display: block;
     padding: 0 20px;
     font-weight: bold;
-    background-image:url('tab_s.png');
+    background-image:url('tab_b.png');
     background-repeat:no-repeat;
     background-position:right;
     color: #434343;
