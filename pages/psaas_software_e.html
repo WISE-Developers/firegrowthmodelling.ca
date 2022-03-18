@@ -6,11 +6,11 @@
 <meta name="keywords" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="/favicon.ico" /> 
-<link rel="stylesheet" type="text/css" href="../style_fgm.css" />
+<link rel="stylesheet" type="text/css" href="css/style_fgm.css" />
 <script type="text/javascript" src="js/dropdownMenu.js"></script>
 <script type="text/javascript" src="js/includes.js"></script>
 <script type="text/javascript" src="js/tabContent.js"></script>
-<title>FireGrowthModel.ca - Prometheus</title>
+<title>FireGrowthModel.ca - PSaaS</title>
 </head>
 <body>
 <div id="container">
@@ -23,7 +23,7 @@
 </div>
 
 <div id="banner">
-	<h1>Prometheus</h1>
+	<h1>PSaaS</h1>
 	<img src="images/prometheus_banner.jpg" alt="" />
 </div>
    <div include-html="parts/dropdownMenu.html"></div>
@@ -48,384 +48,33 @@
 
 	<h3>Current Version</h3>
 
-	<p>Prometheus 6.2.4 for 64-bit Windows operating systems was released January 13, 2019.</p>
+	<p>PSaaS 1.0 for Cross Platform is not yet released. We are hoping to release V1.0 in 2022</p>
 
-	<ul class="download">
-		<li><a class="download" href="downloads/prometheus_6.2.4_2019-01-13.exe">Download Prometheus 6.2.4</a></li>
-	</ul>
-
-	<h3>Important Installation Instructions</h3>
-		
-	<ul>
-		<li>Install all software prerequistes on a 64-bit Windows computer that meets or exceeds minimum system requirements and perform a system restart.</li>
-		<li>Log on to your computer as a system administrator.</li>
-		<li>Uninstall any previous version of the Prometheus application from your computer.</li>
-		<li>Close all open applications and run <b>prometheus_6.2.4_2019-01-13</b> <span class="file">[EXE - 52.9 MB]</span>. A Setup Wizard will guide you through the installation.</li>
-	</ul>
-
-	<h3>Troubleshooting Checklist</h3>
-
-	<ul>
-		<li>Verify your computer is running a 64-bit Windows operating system.</li>
-		<li>Verify Microsoft .NET Framework Version 4.6 or greater and Microsoft Visual C++ 2017 Redistributable (x64) are installed on your computer. This software can be downloaded from the <a href="http://www.microsoft.com/en-us/download/default.aspx" target="_blank">Microsoft Download Center</a>. Try running Windows Update if you still encounter problems.</li>
-		<li>Verify a Windows 64-bit version of Java 8.0 (update 151 or greater) is installed on your computer. This software can be downloaded from the <a href="https://java.com/en/download/manual.jsp" target="_blank">Java Downloads for All Operating Systems webpage</a>.</li>
-		<li>Verify the 2019 Intel C++ redistributable library (version 19.0.117 or greater) for 64-bit Windows is installed on your computer. This software can be downloaded from the <a href="https://software.intel.com/en-us/articles/redistributable-libraries-for-intel-c-and-fortran-2019-compilers-for-windows" target="new">Intel&#174; Developer Zone</a> website. The redistributable library called Update 1 is recommended.</li>
-		<li>Verify your computer was restarted after installing the 2019 Intel C++ redistributable library prerequisite. The Prometheus setup wizard looks for this prerequisite on your computer but cannot determine if a system restart occurred. Failure to restart your computer after installing the Intel C++ redistributable library will result in a failed Prometheus installation.</li>
-		<li>Verify that an administrator account was used to install Prometheus.</li>
-	</ul>
-
-	<h3>Sample Data Set</h3>
-
-	<p>Click the following link to download a sample data set for the 2001 Dogrib fire. The data set contains a README document, model input files, and a an example fire growth model project.</p>
-	<ul>
-		<li><a href="downloads/Dogrib_v624.zip">Dogrib_v624</a> <span class="file"> [ZIP - 5.77 MB]</span></li>
-	</ul>
-
-	<h3>Previous Releases</h3>
-
-	<ul>
-		<li><a href="downloads/prometheus_6.2.3_2018-01-30.exe">prometheus_6.2.3_2018-01-30</a><span class="file"> [EXE - 87.6 MB]</span></li>
-		<li><a href="downloads/prometheus_6.2.2_2017-01-23.exe">prometheus_6.2.2_2017-01-23</a><span class="file"> [EXE - 73.7 MB]</span></li>
-	</ul>
+	
 
 </div>    </div>
 	
     <div class="tabContent" id="requirements">
 	  <div>
 
-	<p>Your computer must meet or exceed the following system requirements in order to install and use the Prometheus application and COM.</p>
-
-	<table class="software">
-		<tr>
-			<th>Requirement</th>
-			<th>Minimum</th>
-			<th>Recommended</th>
-		</tr>
-		<tr>
-			<td>Operating System*</td>
-			<td>64-bit Windows 7 or</br>Windows Server 2008</td>
-			<td>64-bit Windows 10 or</br>Windows Server 2008 R2</td>
-		</tr>
-		<tr>
-			<td>Microsoft Software</td>
-			<td>.NET Framework 4.6</br>and</br>Visual C++ 2017 Redistributable (x64)</td>
-<td>.NET Framework 4.7</br>and</br>Visual C++ 2017 Redistributable (x64)</td>
-		</tr>
-		<tr>
-			<td>Oracle Software</td>
-			<td>Java 8.0 for Windows (x64)</br>(Update 151)</td>	
-			<td>Java 8.0 for Windows (x64)</br>(Update 191)</td>
-		</tr>
-		<tr>
-			<td>Intel&#174; Software</td>
-			<td>2019 C++ Redistributable Library for Windows (x64)</br>(Initial Release: 19.0.117)</td>
-			<td>2019 C++ Redistributable Library for Windows (x64)</br>(Update 1: 19.1.144)</td>
-		</tr>
-		<tr>
-			<td>Processors</td>
-			<td>4 cores</td>
-			<td>4 hyper-threading cores</td>
-		</tr>
-		<tr>
-			<td>RAM</td>
-			<td>6 GB</td>
-			<td>12 GB</td>
-		</tr>
-		<tr>
-			<td>Hard Drive</td>
-			<td>5 GB</td>
-			<td>500 GB</td>
-		</tr>
-		<tr>
-			<td>Screen Resolution</td>
-			<td>1280 x 720</td>
-			<td>1600 x 1024</td>
-		</tr>
-	</table>
-
-	<p><i>*32-bit operating systems are not supported.</i></p>
+		<h3>TBD</h3>
 	
 </div>    </div>
 
     <div class="tabContent" id="release_notes">
 	  <div>
 
-	<h3>Changes in Prometheus 6.2.4</h3>
-	
-	<h4>New Features</h4>
-	
-	<ul>
-		<li>Updated text in the About box to acknowledge financial and in-kind support provided by agencies other than Alberta Agriculture and Forestry.</li>
-		<li>Removed support for the Windows Vista operating system and updated minimum software requirements to Microsoft .NET Framework 4.6, Microsoft Visual C++ 2017 Redistributable, Intel C++ 2019 Redistributable library 19.0.117, and Java 8.0 Update 151 for Windows (x64).</li>
-		<li>Removed the check box option to run Prometheus from the last Install Wizard dialog. The last dialog now finishes the installer without running Prometheus.</li>
-		<li>Added Hourly Initial Spread Index (HISI) to the scenario Burning Condtions tab and changed the format for Start and End times from H to H:M:S.</li>
-		<li>Deprecated the *.lut file extension for importing and exporting fuel lookup tables. The file type options for lookup tables now include *.csv and *.txt.</li>
-		<li>Created a new O-1a/O-1b fuel type. The O-1a/O-1b fuel type allows for transition between seasonal grass phenology states (matted versus standing) within a scenario without the need for a fuel grid reclassification.</li>
-		<li>Added a table to the Scenario Fire Behavior tab which allows specification of grass curing as a percentage across multiple start and end dates. The table allows for grass curing to transition throughout a scenario simulation. Previously, a single grass curing value was applied to the entire duration of a scenario simulation. Defaults values for this table are set under the Prometheus Options Fire Behavior tab.</li>
-		<li>Added standing grass start and end dates to the Scenario Fire Behavior tab. Standing grass phenology is applied to a scenario simulation between the specified start and end dates where the O-1a/O-1b fuel type has been used in the associated fuel grid. Default start and end dates for grass curing are set under the Prometheus Options Fire Behavior tab.</li>
-		<li>Replaced the green-up switch in the Scenario Fire Behavior tab with start and end dates. Green-up (leaf-on) conditions are now applied to the D-1/D-2, M-1/M-2 and M-3/M-4 fuel types between specified start and end dates as opposed to being exclusivly ON/OFF throughout a scearnio simulation. Default start and end dates for green-up are set under the Prometheus Options Fire Behavior tab.</li>
-		<li>Re-ordered green-up attributes in the Map Query, added a grass phenology attribute to display the scenario status of the O-1a/O-b fuel type (matted versus standing), and changed the Map Query value for green-up from Yes/No to Leaf-on/Leaf-off.</li>
-		<li>Added a routine to scan an elevation grid input for NoData. Prometheus now attempts to fill any NoData detected in the elevation grid using bilinear interpolation. Elevation NoData values are only interpolated and filled where NoData values do not exist in the fuel grid. NoData values that cannot be interpolated are filled with the median elevation grid value. Warning messages appear when this routine is applied.</li>
-		<li>Added support (where appropriate) for importing landscape grid files as 1, 2 or 4 byte unsigned integers, 2 or 4 byte signed integers, and 4 or 8 byte floating point values. Fuel and green-up grid imports are limited to unsigned and signed integer formats.</li>
-		<li>Set the DATUM option for the OGRSpatialReference::IsSame function to IGNORE. This function is used to check for matching projection information when importing landscape grid inputs. Previously the DATUM option was not set and resulted in an error message that prevented the import of landscape grid inputs when their datum information was not identical to the fuel grid datum.</li>
-		<li>Updated dialog options for importing weather stream from ensemble weather models. The percentile option for the GEM and NCEP ensembles was removed and replaced with a drop down to select a specific ensemble member.</li>
-		<li>Wind speed and wind direction values from multiple point locations (weather stations) are now converted to u and v vectors and spatially interpolated using Inverse Distance Weighting when any of the three fire weather interpolation options are applied to a scenario. This method replaces the former Thiessen polygon method for applying wind directions from multiple point locations to a scenario.</li>
-		<li>Modified the header order for weather stream exports and increased the level of precision for all numerical columns to two decimal places. Wind direction is the one exception that is still exported as an integer value. The header order for hourly weather stream exports is now:</br>Hourly,Hour,Temp,RH,WS,WD,Precip,FFMC,DMC,DC,ISI,BUI,FWI,HFFMC,HISI,HFWI</br>The header order for daily weather stream exports is now:</br>Daily,Min_Temp,Max_Temp,Min_RH,Min_WS,Max_WS,WD,Precip,FFMC,DMC,DC,ISI,BUI,FWI</br>The header order for noon standard weather stream exports is now:</br>Date,Temp,RH,WS,WD,Precip,FFMC,DMC,DC,ISI,BUI,FWI</li>
-		<li>Renamed and reordered Scenario and Prometheus Options dialog tabs. The five Scenario dialog tabs are now: Scenario Inputs, Burning Conditions, Fire Weather, Fire Behavior, Propagation. The seven Prometheus Options dialog tabs are now: Configuration, Display, Burning Conditions, Fire Weather, Fire Behavior, Propagation, Statistics.</li>
-		<li>Added iterators to the Prometheus COM for exporting fire perimeters. COM applications can now specify what fire perimeter(s) to export using attributes from a simulation, eg.) scenario name, ignition name, date and time, ellapsed time, time step.</li>
-		<li>Added updates to the Prometheus help file.</li>
-	</ul>
-	
-	<h4>Bug Fixes</h4>
-	
-	<ul>
-		<li>Fixed a bug where a simulation could be started without a weather stream attached to the scenario. The simulation would then hang in a state where Pause and End options could not be used to terminate the simulation.</li>
-		<li>Fixed a bug where multiple weather stations could not be added to a scenario when one of the three Fire Weather Interpolation options were activated.</li>
-		<li>Fixed a bug where fire behavior grids exported from a scenario with the Inverse Distance Weighting method resulted in grids containing all zero values.
-		<li>Fixed a bug where Prometheus crashed when any of the display units under Prometheus Options Display were changed and the OK button was pressed.</li>
-		<li>Fixed an issue related to filenames stored in Unicode and Prometheus working in ASCII. This issue resulted in the error message: Could not find "C". Now using "C:\ProgramData\CWFGM\Prometheus\Prometheus.clrtbl". This error message only appeared the first time Prometheus was opened after installation.</li>
-	</ul>
+	<h3>Will be posted upon release</h3>
+
 	
 </div>
-
-<!--<h3>Changes in Prometheus 6.2.2</h3>
-
-  <h4>New Features</h4>
-
-	<ul>
-		<li>Weather streams are no longer required to start on hour 0 or end on hour 23. The first day of a weather stream can now start on any hour prior to 12 LST. The last day of the weather stream can end on any hour. Wording in the weather dialog regarding the starting value for yesterday's precipitation was modified to reflect weather streams that do not start on hour 0.</li>
-		<li>Weather stream imports now ignore Initial Spread Index (ISI), Buildup Index (BUI), and Fire Weather Index (FWI) when provided. Prometheus now calculates ISI, BUI, and FWI using the wind speed, FFMC, DMC, and DC values provided. This change ensures that the ISI value conforms to the equations used in the Canadian Fire Behavior Predication (FBP) System.</li>
-		<li>Removed the Foliar Moisture Content (FMC) override from the New Project Wizard and Landscape Properties dialog. This setting is now accessed through the Simulation Settings tab in the Scenario dialog. Prometheus now applies a default FMC override setting based on the world location of your landscape grids. The FMC override option is turned off for datasets within Canada and FBP System equations are used to calculate FMC. The FMC override option is turned on for datasets outside of Canada and defaults to 145 % in Australia and New Zealand, and 120 % everywhere else. </li>
-		<li>Introduced a percentile rate of spread parameter in the Simulation Settings tab of the Scenario dialog. The Forestry Canada Fire Danger Group provided scatter plots of rate of spread versus ISI for each FBP System fuel type in the 1992 Information Report ST-X-3. The scatter plots overlay fire observation data points used to develop each FBP System fuel model and indicate varying degrees of uncertainty with respect to modelled rates of spread.  The percentile rate of spread parameter is used to incorporate uncertainty specific to each FBP System fuel type into fire growth simulations. A percentile of 50 will produce rates of spread that match FBP System fuel models, and suggests 50 % of observations will be slower than predicted. In comparison, a percentile of 75 will produce faster rates of spread than FBP System fuel models, and suggests 75 % of observations will be slower than predicted. A percentile of 25 will produce slower rates of spread than FBP System fuel models, and suggests only 25 % of observations will be slower than predicted. Caution is advised as this parameter has not undergone rigorous testing and should be considered beta.</li>
-		<li>Added support for GeoTiff files containing 2-byte integers.</li>
-		<li>Made changes to the FGMX file format including exposure of FBP fuel type constructs (rather than a binary/hexadecimal storage).</li>
-		<li>Re-integrated changes to the PrometheusCOM interface for more control over fuel lookup files.</li>
-		<li>Updated the code base to reflect changes to the C++ programming language.</li>
-	</ul>
-
-  <h4>Bug Fixes</h4>
-
-	<ul>
-		<li>Corrected issues with automatic time zone selection.</li>
-		<li>Changed conditional logic in the Diurnal (Lawson) FFMC code which did not accept 101 as acceptable FFMC value.</li>
-		<li>Made refinements to code used to untangler fire perimeter vertices during a simulation.</li>
-		<li>Made revisions to the FGMX file format to retain fidelity of floating point values. This fix resolved issues where a project saved in the FMGX format produced slightly different outputs than the same project saved in the FGM format. </li>
-		<li>Fixed crash that resulted when opening a new map.</li>
-		<li>Fixed crash that resulted when the map size was reduced to zero by resizing the application frame from the left.</li>
-		<li>Fixed crash that resulted from displaying % Fire Intensity (FI) and % Rate of Spread (ROS) classes in the statistics view.</li>
-		<li>Resized grid information fields and added units to the New Project Wizard dialog. Grid information fields were previously cutting off values for large grid extents.</li>
-		<li>Resolved race conditions in multithreading.</li>
-		<li>Resolved issues with Java resource unlocking.</li>
-	</ul>
-
-
-<h3>Changes in Prometheus 6.2.1</h3>
-
-  <h4>New Features</h4>
-
-	<ul>
-		<li>Migrated Prometheus from using C++ code for all weather file imports to REDapp Java code.</li>
-		<li>Prometheus can now accept weather files that do not start at hour 0, or end at hour 23.&nbsp; The user interface conveys start and end dates according to the input time range.</li>
-		<li>Initial Spread Index (ISI), Buildup Index (BUI), and Fire Weather Index (FWI) values provided in a weather stream file are now ignored, forcing calculation of these values.</li>
-		<li>Modification of weather options and implementation to address performance and correctness with respect to Fire Weather Index System calculations.</li>
-		<li>Modified the Voronoi area weighting interpolation modes to potentially use more correct vertices for grid exports.</li>
-		<li>Re-introduced functionality to purge hidden simulation time steps.  This functionality is now an option in the Scenario - Simulation dialog. Note that this mode has significant effects on grid exports and is by default turned off.  This option frees memory utilization and is therefore useful for large fire simulations.</li>
-		<li>Updated approach to recognize and compensate for low memory usage.  The old version had an approach based on the 32-bit Windows statistics, and this was updated to work with 64-bit Windows statistics.  The simulation will abort with available virtual memory drops to under 500 GB.  The caching algorithms will limit block caches to 20% of available memory too.</li>
-		<li>Exposed loading & saving FGMX, FGMZ, and FGMZS file types. FGMX is an XML based file type. FGMZ is a compressed (zipped) version of the FGMX file type. FGMZS is a secure (password protected) version of the FGMZ file type.</li>
-		<li>Updated Prometheus COM interface for better exposure of fuel lookup table (LUT) files, with the intent to help COM applications eliminate code dealing with LUT files.</li>
-		<li>Exposed scenario report export functionality for COM applications. </li>
-	</ul>
-
-  <h4>Bug Fixes</h4>
-
-	<ul>
-		<li>Low equilibrium rate of spread values (< 0.001 m/min) no longer extinguish vertices. This bug was inadvertently turning off portions of a simulated fire perimeter under low fire growth conditions.</li>
-		<li>Correction of time zone selection for when grid inputs are located in the Arctic and Antarctic circles.</li>
-		<li>Fixed issue where tabbing did not reach the last line of data with some dialog controls.</li>
-		<li>Fixed a rounding error in Area Growth Time statistic.</li>
-		<li>Fixed two bugs that could cause Prometheus to crash when exporting grid outputs.  The manifestation of these bugs was rare, but occurred consistently when hidden time steps were purged.</li>
-		<li>Fixed a rare bug that may have been reported as a crash by BurnP3 users, which was a race condition in the HSS_Math library.</li>
-		<li>Improved vertice untangler algorithms to address hanging simulations that sometimes occurred in COM applications such as Burn-P3.</li>
-		<li>Fixed loading of some FGM files.</li>
-	</ul>
-
-
-<h3>Changes in Prometheus 6.2.0</h3>
-
-  <h4>New Features</h4>
-
-	<ul>
-		<li>Added a Prometheus Option for specifying the default map view type that opens after creating a new FGM.</li>
-
-		<li>Introduced two new statistics called Area Growth Time and Elapsed Processing Time. Area Growth Time reports the accumulated amount of time a fire grows during a simulation. Elapsed Processing Time is the time it takes your computer to simulate a scenario. The following statistics were removed: Active Perimeter Growth Rate, Maximum CFB, Maximum CFC, Maximum FI, Maximum Flame Length, Maximum ROS, Maximum ROS, Maximum SFC, Maximum TFC.</li>
-
-		<li>The Scenario dialog now lists ignitions in alpha-numeric order.</li>
-
-		<li>Removal of some F1 menu items and a reset of the toolbar and menubar locations.</li>
-
-		<li>Changed the color table used for displaying fire intensities to match the tables in the Field Guide to the Canadian Forest Fire Behavior Prediction (FBP) System (Taylor et al. 1997).</li>
-
-		<li>Added meters per hour (m/h) to the display units for rate of spread.</li>
-
-		<li>The Maximum Calculation Time Step setting has been removed from Prometheus Options. </li>
-
-		<li>Changed the condition for when a weather station distance warning appears. The warning previously appeared when a new station location was &#62; 100 km from grid center. The warning now appears when a new station location is &#62; 40 km from the grid extent. This change will result in fewer warning messages when creating large landscape simulations.</li>
-
-		<li>Added a default fuel look-up table for Tasmania, Australia.</li>
-
-		<li>Made several updates to the default fuel lookup table for New Zealand.</li>
-
-		<li>Breaching and burning conditions are now by default on.</li>
-
-		<li>Suppressed Prometheus Options for applying BUI effect and acceleration. These settings are now always on and cannot be changed.</li>
-
-		<li>Vector data import now scans for and removes duplicate polygons.</li>
-
-		<li>Added import and export support for single-band GeoTIFF grid files and improved recognition of various projection file formats.</li>
-
-		<li>Integrated the Landscape Properties dialog into the New Project Wizard and improved time zone detection based on the location of grid inputs.</li>
-
-		<li>Renamed the "FGM_DATE" attribute in fire perimeter export files to "DATE". Date values are now in "yyyy-mm-dd" format.</li>
-
-		<li>Linear interpolation of latitude/longitude that was introduced for performance in older versions is now disabled.</li>
-
-		<li>Introduced a new method Grid_ConvertUnits() for Burn-P3 to perform coordinate conversions.</li>
-
-		<li>Added an option to import deterministic and ensemble forecast information directly from a Meteorological Service of Canada URL. This adds 64-bit Java to the list of Prometheus prerequisites. The installer now checks for the presence of the correct Java libraries. If missing, they must be installed separately, and prior to Prometheus.</li>
-
-		<li>Added interpolation for missing weather stream data upon import. Hourly weather stream files now require a minimum of 4 observations per day spaced 6 hours apart. The first record in a weather stream must start on hour 0. The last record in a weather stream must end on hour 23. Spline interpolation is used to fill missing temperature, relative humidity, and wind speed values. Missing wind direction values are filled using a piece-wise constant approach. Missing precipitation values are assumed to be zero.</li>
-
-		<li>Precipitation amounts for daily weather streams are now applied to hour 1200 LST (1300 LDT). In previous version, daily precipitation was divided across 24 hours. </li>
-
-		<li>Removed support for FGM files from version 5.3 and prior. These old FGM files now contain incompatible spatial weather stream configurations, data, and modes.</li>
-
-		<li>Updates to the interrupt time step loop to ensure that display time step occurrences do not affect simulation outputs.</li>
-
-		<li>The untangler no longer runs unless burning conditions for a simulation time step have been met.</li>
-
-		<li>Introduced a dynamic distance resolution setting that is by default on. This setting will result in a noticeable performance improvement when simulating &#62; 10,000 ha fires with minimal impact on the final fire size and shape. When this setting is on, a logistic equation determines the distance resolution for the current time step based on total area burned in the previous time step. Distance resolution equals 1 grid cell up to 10,000 ha, increases exponentially to its sigmoidal midpoint of 2.5 grid cells at 50,000 ha, and levels off to 4 grids cells at 90,000 ha.</li>
-
-		<li>Crash Report integration.</li>
-
-		<li>Introduced caching of perimeter and area values and improved memory cache performance.</li>
-
-		<li>Synchronization primitive performance improvements.</li>
-
-		<li>Updates to the custom threading library to deal with Windows updates and supporting more cores.</li>
-
-		<li>Updates to the installer to deal with Java, and better silent install operation and documentation.</li>
-	</ul>
-
-  <h4>Bug Fixes</h4>
-
-	<ul>
-		<li>Previously, when very slow rate of spread values occurred, it was possible for a divide-by-zero situation to occur in the equations used to simulate fire growth. This has now been resolved. A minimum equilibrium rate of spread of 0.001 m/min is required for any growth to take place. Fire perimeter vertices that fall below this threshold are marked as not growing during the respective time step.</li>
-
-		<li>Removed a condition from the C-6 fuel type where crown fraction burned (CFB) equaled zero when crown base height (CBH) equaled zero.</li>
-
-		<li>Fixes and improvements to Poly::Unwind(), including retaining more interior perimeters.</li>
-
-		<li>Installer changes to fix BurnP3 / path issues.</li>
-	</ul>
-
-
-<h3>Changes in Prometheus 6.1.0</h3>
-
-  <h4>New Features</h4>
-
-	<ul>
-		<li>Win32 support is no longer provided. The installation script and various pieces in the code have been updated accordingly.</li>
-		<li>Enabled silent installs of Prometheus, provided the Intel compiler prerequisites are already installed. To run the Prometheus installer silently and without a reboot you need the /S and /skip_reboot flags.</li>
-		<li>Upgraded to a custom build of GDAL 1.11.1.  This includes the currently associated build of PROJ.4.  This build includes support for NetCDF files. Added a synonym to pre-process projection files sent to PROJ.4, so that GRS80 == GRS_1980.</li>
-		<li>Imported grid files no longer need to be precisely geo-referenced to the origin of the originally imported fuel grid. Grid files which are within 0.001 meters are now accepted quietly. Note that imported grid files must still have the same extent and resolution.</li>
-		<li>Dynamic rounding is now applied to breaching and the management of fire vertices. Static rounding was previously used. Dynamic rounding is theoretically better than static rounding. However, expect slower performance as the size and duration of a fire simulation increases. Eg.) no performance difference for a 6000 ha simulation over 10 time steps, 25 seconds slower for a 13,000 ha simulation over 20 time steps, and 90 seconds slower for a 14,000 ha simulation over 70 time steps.</li>
-		<li>The header names for the default fuel look-up table are now grid_value, export_value, descriptive_name, fuel_type, r, g, b, h, s, l. Previously used header names are still accepted when importing a look-up table file. The export_value column is now optional. When missing, the export value column is assumed to equal the grid_value column. Prometheus now sorts fuel types in a look-up table in ascending order based on the grid_value column. </li>
-		<li>Several synonyms associated with Non-Fuel have been removed. Prometheus recognizes "Non Fuel", "NF" and several New Zealand fuel types as synonyms for Non-Fuel. Note that Prometheus is not case sensitive with respect to fuel types. The most noticeable impact of this change is the fuel type assigned to Not Available, Water, Unknown, Unclassified, and Vegetated Non-Fuel in the default look-up table for Canada. These fuel types now reference Non-Fuel. Fuel type identifiers were removed from the descriptive names in the default look-up table for Canada. Application defaults will be reset when first running this version.</li>
-		<li>Fuel type is now displayed in the New Project Wizard table. Several cosmetic updates were also made to the New Project Wizard.</li>
-		<li>Fuel type information listed in the component view now displays grid code, descriptive name, and fuel type. Eg.) 1: Spruce-Lichen Woodland (C-1).  Note that when multiple grid codes are assigned to the same fuel type, they are separated by commas before the colon in the component view display string. The component view now sorts fuel types in ascending order based on their associated grid code values.</li>
-		<li>Added an option on the first tab of the Prometheus Options dialog to suppress the creation of a new map view when running a scenario that is not already assigned to a map view.  By default, the map view is still created.</li>
-		<li>Removed settings for smoothing, number of starting vertices, and elevation where NODATA or no grid exists from the Simulation Settings dialog and Scenario Report. Values are conditionally reset when an old FGM is opened, and a warning message is added to the Project Comments. These settings can still be defined in the code, but are no longer available through the user interface. These settings are also still available to PromtheusCOM clients.</li>
-		<li>Minor cosmetic updates to the Simulation Settings dialog and Scenario Report. Most noticeable, the third Fire Weather Interpolation option was renamed, and the landscape properties button was removed from the Simulation Settings dialog. Fuel lookup-table was added to, and several items were re-ordered in, the Scenario Report.</li>
-		<li>Introduced code to simplify time zone selection.</li>
-		<li>Introduced code to recognize latitude/longitude coordinates located in Australia, and when true, default Foliar Moisture Content (FMC) to 145 %.</li>
-		<li>Introduced code for importing total fuel load grids. Note, options to import and/or work with total fuel load grids have been temporarily suppressed in the Prometheus interface.</li>
-		<li>Updated grass fuel load units on the edit fuel type dialog from Tons/Ha to t/ha.</li>
-		<li>Increased allowable daily precipitation in daily FFMC, DC, and DMC calculations from 300 mm to 600 mm.</li>
-		<li>Introduced more error code messages to PrometheusCOM, to provide textual information when error codes appear.</li>
-		<li>Minor tweaks made to the Microsoft Foundation Class (MFC) wrapper code to deal with extracting application defaults from the registry.</li>
-		<li>PrometheusCOM now expects date/times to be presented in YYYY-mm-ddTHH:MM:SS format on its programming interface. This format is ISO compliant. Other formats may no longer work. Other formats were considered but with PrometheusCOM clients now being written in Java, the basic text format was deemed most appropriate.</li>
-		<li>The Prometheus about box now displays all four values for the version string.  A new option is available for PrometheusCOM clients too.  A request for information in the same manner (and function call) as PROMETHEUSCOM_VERSION, but instead passing a value of PROMETHEUSCOM_RELEASEDATE (value is 206) will return the date of the release in time_t (seconds since 1970) format. A breaking change has been made to PrometheusCOM, where a new function called GetStringAttribute() is now available.  It will accept two attribute keys, PROMETHEUSCOM_VERSION, and PROMETHEUSCOM_RELEASEDATE (value is 206).  As before, the client must free memory allocated in this routine (allocated using SysAllocString()).</li>
-	</ul>
-
-  <h4>Bug Fixes</h4>
-
-	<ul>
-		<li>Fixed an issue where some fire simulations did not advance when breaching was applied with multiple intersecting vectors. This bug fix involved re-introducing locking to avoid multithreading sync issues and inverting some logic to sometimes check if a location is close to another (based on some epsilon), and other times check if a location is precisely the same as another. </li>
-		<li>Fixed an extremely rare bug in the caching of the polygon untangler where some potential intersections may have been missed.</li>
-		<li>Fixed a bad assumption leading to crashes in the polygon untangler.</li>
-		<li>Fixed an issue where error conditions associated with too many grids of the same type in a scenario were not treated consistently.</li>
-		<li>Fixed an undocumented bug where Crown Base Height (CBH) and tree height grid values were stored as integers, not real numbers.</li>
-		<li>Fixed a user interface bug in the component view that appeared when cancelling a weather station edit operation.</li>
-		<li>Fixed a re-import weather stream bug where importing a new file over an existing weather stream either froze the application or resulted in a crash.</li>
-		<li>Fixed recursive DMC and DC calculations associated with the third fire weather interpolation option. DMC and DC were using noon precipitation values instead of the past 24 hours. These calculations now correctly use precipitation from the past 24 hours.</li>
-		<li>Fixed a bug with the KML perimeter export, where playback times in Google Earth were interpreted as Greenwich Mean Time (GMT). Playback times are now interpreted using the time zone from your Prometheus simulation. Note, the default setting in Google Earth is to convert these playback times to the time zone used by your computer's clock.</li>
-		<li>Fixed some bugs affecting extremely large allocations that caused Burn-P3 to crash (but not Prometheus).</li>
-		<li>Introduced code to make sure that ASCII grid exports can only happen one at a time.  This fixes a crash in BurnP3, but has no affect on Prometheus because of the user interface.</li>
-	</ul>
-
-
-<h3>Changes in Prometheus 6.0.0</h3>
-
-  <h4>New Features</h4>
-
-	<ul>
-		<li>Windows XP operating systems are no longer supported.</li>
-		<li>Visual Studio and Intel compilers were both updated (along with their respective fixes to MFC, math operations, etc.), along with a more complete integration of the Intel compilation toolset.</li>
-		<li>The library used to perform Voronoi interpolation was updated from CGAL to Boost resulting in improved performance when exporting scenario grid outputs.</li>
-		<li>The Geospatial Data Abstraction Library (GDAL) was updated to version 1.9.2.</li>
-		<li>The edit hourly weather conditions dialog was completely updated using a .Net control for improved spreadsheet and copy/paste functionality.</li>
-		<li>Changed the layering mechanism to help with Burn-P3 performance.</li>
-		<li>The FBP fuel lookup table can now accept RGB and/or HSL color values. Previous versions required both sets of color values when importing a fuel lookup table file.</li>
-		<li>The Component view, Statistics view, and Map Query have been replaced with dockable panes. Map views now function as tabs that automatically maximize to the remainder of the application frame.</li>
-		<li>Several menu options have been renamed and re-organized.</li>
-		<li>Additional display units have been added to Prometheus Options.</li>
-		<li>Fuel patches can now modify NoData grid values.</li>
-		<li>The Beginner's Tutorial has been permanently removed. An updated Beginner's Tutorial will soon be added to Prometheus Help.</li>
-		<li>FWICom was updated with respect to FFMC and DMC equations for consistency with Canadian Forest Service source code. The impact of this change is limited to decimal rounding.</li>
-		<li>Spatial weather modelling rules were updated. Simulation Settings associated with spatial weather modelling were simplified.</li>
-		<li>Spatially interpolated Buildup Index (BUI) was added to the list of scenario grid exports.</li>
-		<li>Revamped the layout and contents of the scenario report.</li>
-	</ul>
-
-  <h4>Bug Fixes</h4>
-
-	<ul>
-		<li>Intermittent crashes no longer occur while editing the FBP fuel lookup table in the New Project Wizard.</li>
-		<li>Project Comments now word wrap.</li>
-		<li>Modifying display units under the Prometheus Options menu no longer crash the application.</li>
-		<li>Prometheus Help now launches when an FGM project file is open.</li>
-		<li>The scenario associated with a Statistics pane is now saved when you close and re-open a project.</li>
-		<li>The name field for an imported weather patch now defaults to the name of the imported file.</li>
-		<li>Deleting a fuel patch no longer crashes the application.</li>
-		<li>Creating a new scenario no longer crashes the application.</li>
-		<li>Edits can no longer be made when viewing inputs listed under a scenario in the Components pane. Dialogs now open in a view mode.</li>
-		<li>Fire perimeters can now be exported on 32-bit operating systems.</li>
-		<li>Flame length calculations now enforce rules regarding which fuel types use which method of calculation.</li>
-		<li>All fuel types associated with the New Zealand configuration are now initialized. Project files built with older versions of Prometheus are updated when opened. This bug fix prevents fire simulations from inadvertently burning through non-fuels.</li>
-	</ul>
-
-</div>-->    </div>
+   </div>
 
     <div class="tabContent" id="license_agreement">
 	  <div>
 
-<h3>Prometheus: the Canadian Wildland Fire Growth Simulation Model</h3>
+<h3>Still TBD</h3>
 
-<p>Version 6.2.4, Copyright &copy 2000 - 2019 The PSaaS Development Team</p>
-
-<p>Release date: January 13, 2019</p>
-
-<p>Prometheus is a wildland fire growth simulation model first released in 2002 with support from fire management agencies, research institutes, and industry partners across Canada. A project steering committee was responsible for coordinating early development of the Prometheus application. Alberta Agriculture and Forestry is now the lead agency and custodian with financial and in-kind support from the Canadian Forest Service, Government of Northwest Territories, Government of Ontario, and Scion Research. The Prometheus application and Prometheus COM are freeware software.</p>
 
 </div>    </div>
 
