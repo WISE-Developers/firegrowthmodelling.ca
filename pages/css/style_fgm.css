@@ -14,6 +14,7 @@
 	--tab-bg-color: rgb(137, 87, 0);
 	--tab-active-bg-color: rgb(255, 162, 0);
 	--tab-hover-bg-color:rgb(255, 225, 0);
+	--watermark-color:rgb(0, 0, 0);
 
   }
 
@@ -390,4 +391,18 @@ div.tabContent.hide {
 	padding: 16px 16px 16px 16px;
 	background-color: var(--footer-bg-color);
 	margin: 10;
+	text-shadow: 3px 3px 3px #333333;
+}
+
+.draft {
+    color: var(--watermark-color);
+	position: absolute;
+    opacity: 0.55;
+    font-size: 3em;
+    width: 70%;
+	padding: 350px 500px 0px 0px;
+    text-align: center;
+    /* z-index: 1000; */
+	transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+	font-weight: 900;
 }
