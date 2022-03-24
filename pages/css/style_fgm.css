@@ -406,3 +406,12 @@ div.tabContent.hide {
 	transform: rotate(45deg); /* Equal to rotateZ(45deg) */
 	font-weight: 900;
 }
+.featured {
+	border: 1px solid #ffe100;
+	font-size: 1.2em;
+	border-radius: 6px 6px 6px 6px;
+	padding: 16px 16px 16px 16px;
+	background-color: var(--footer-bg-color);
+	margin: 10;
+	text-shadow: 3px 3px 3px #333333;
+}
