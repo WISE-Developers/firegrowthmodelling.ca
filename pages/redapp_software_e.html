@@ -11,6 +11,10 @@
   <script type="text/javascript" src="js/dropdownMenu.js"></script>
   <script type="text/javascript" src="js/includes.js"></script>
   <script type="text/javascript" src="js/tabContent.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>FireGrowthModel.ca - REDapp</title>
 </head>
 
@@ -39,17 +43,17 @@
       <body onload="init()">
 
         <ul id="tabs">
-          <li><a href="software_e.php.html#downloads">Downloads</a></li>
-          <li><a href="software_e.php.html#requirements">Requirements</a></li>
-          <li><a href="software_e.php.html#release_notes">Release Notes</a></li>
-          <li><a href="software_e.php.html#license_agreement">License Agreement</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#release_notes">Release Notes</a></li>
+          <li><a href="#license_agreement">License Agreement</a></li>
         </ul>
 
         <div class="tabContent" id="downloads">
           <div>
 
             <h3>Current Version</h3>
-            <p>REDapp V7.2022.3-0 - New release!!! (Log4j Safe)</p>
+            <p>REDapp V7.2022.3-0  <span class="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J Safe</span> New release!!! (Log4j Safe)</p>
 
             <ul id="redappdls">
               <li><a href="https://spyd.com/fgm.ca/REDapp-Linux-20190106.jar" target="_blank">Portable no-install [ZIP 115 MB]</a></li>
@@ -98,14 +102,15 @@
 
         <div class="tabContent" id="release_notes">
           <div>
-
+            <p>REDapp V7.2022.3-0  <span class="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J Safe</span> release</p>
+            <p>Release notes coming soon....</p>
 
             <div class="field field-name-body field-type-text-with-summary field-label-hidden">
               <div class="field-items">
                 <div class="field-item even" property="content:encoded">
                   <div>&nbsp;</div>
                   <div>
-                    <p><strong>Changes since the last release:</strong></p>
+                    <h3>🚀 New Features in REDapp V6.2.4:</h3>
                     <p>#367 The @ Hour for the Hourly (Van Wagner) HFFMC calculation method can now be specified when
                       importing hourly weather in the Statistics tab. An option to use day 1 FFMC at hour 17 has also
                       been provided.</p>
@@ -128,7 +133,7 @@
                     <p>#831 A scale bar that responds the Unit setting (Metric or Imperial) has been added to the Map
                       tab.</p>
                     <p>&nbsp;</p>
-                    <p><strong>Bug fixes since the last release:</strong></p>
+                    <h2>🐛 Bug Fixes in REDapp V6.2.4:</h2>
                     <p>#712 Rounded values where being passed from the FWI Calculator to the FBP Calculator. Rounding is
                       no longer applied to calculated values transferred to other tabs.</p>
                     <p>#714 Changing the coordinate unit setting did not change the format in the Latitude and Longitude
@@ -136,8 +141,10 @@
                       format.</p>
                     <p>#804 Ignition location coordinates are now saved on exit when the “Retain input values when
                       exiting” setting is selected.</p>
-                    <p>&nbsp;</p>
-                    <p><strong>Known issues in this release:</strong></p>
+                    
+
+                    <h3>Known issues in REDapp V6.2.4: (Presumed fixed by REDapp V7.2022.3-0)</h3>
+                    
                     <p>#365 When importing an hourly weather file, the Daily display option in the Statistics tab
                       returns 1 row of noon standard weather labeled 1300 hours when using Daylight Savings Time.
                       However, the data associated with this 1300 hour record are actually the data from hour 0:00 in
@@ -153,135 +160,10 @@
                       Restore Defaults button turns this setting off.</p>
                   </div>
 
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <b><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Changes since the last
-                        release:</span></b></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#367 The @ Hour for the Hourly (Van
-                      Wagner) HFFMC calculation method can now be specified when importing hourly weather in the
-                      Statistics tab. An option to use day 1 FFMC at hour 17 has also been provided.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#547 Typo fixed in the Assumptions
-                      dialog under General FWI System Assumptions.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#712 The FBP Calculator now uses
-                      accelerating rate of spread to calculate fire intensity, spread distances, elliptical fire area
-                      and perimeter. Previous versions of REDapp and other interpretations of the Canadian Fire Behavior
-                      Prediction System use equilibrium rate of spread for subsequent fire behavior calculations.</span>
-                  </p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#785 The Map tab no longer uses
-                      Google map services. Background imagery is now sourced from Open Street Map. An option to source
-                      background imagery from a custom web map service has also been added.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#807 Terrain characteristics have
-                      been removed from the Settings dialog.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#809 A time zone override was
-                      removed from the Statistics tab.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#810 The percentile option for
-                      displaying ensemble forecasts in the Weather tab has been removed. The custom option has been
-                      integrated into the GEM Deterministic, GEM Ensemble, and NCEP Ensemble options.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#817 Elliptical fire perimeters
-                      displayed on the Map tab can now be exported as Shapefiles.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#824 Naming conventions for Weather
-                      tab exports now include the model (GEM or NCEP) and differentiate deterministic and control
-                      members from other ensemble members.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#831 A scale bar that responds the
-                      Unit setting (Metric or Imperial) has been added to the Map tab.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">&nbsp;</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <b><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Bug fixes since the last
-                        release:</span></b></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#712 Rounded values where being
-                      passed from the FWI Calculator to the FBP Calculator. Rounding is no longer applied to calculated
-                      values transferred to other tabs.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#714 Changing the coordinate unit
-                      setting did not change the format in the Latitude and Longitude fields. This has been fixed and
-                      the user interace better reflects the selected coordinate unit format.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#804 Ignition location coordinates
-                      are now saved on exit when the “Retain input values when exiting” setting is selected.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">&nbsp;</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <b><span style="font-size: 11pt; font-family: Calibri, sans-serif;">Known issues in this
-                        release:</span></b></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#365 When importing an hourly
-                      weather file, the Daily display option in the Statistics tab returns 1 row of noon standard
-                      weather labeled 1300 hours when using Daylight Savings Time. However, the data associated with
-                      this 1300 hour record are actually the data from hour 0:00 in the import file.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#367 The new option to use day 1
-                      FFMC at hour 17 when importing hourly weather and applying the Hourly (Van Wagner) HFFMC method
-                      does not adjust to standard time. This setting should apply day 1 FFMC to hour 16 when standard
-                      time is in effect.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#621 Default weather data is not
-                      labeled correctly when manually adding new data to an existing weather table. The precipitation
-                      column contains wind direction values and wind speed column appears to contain precipitation
-                      values.</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#661 The Spotting Calculator label
-                      for Number of Trees Torching says: "Number Tree Torching".</span></p>
-                  <p class="MsoNormal"
-                    style="margin: 0px 0in; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255);">
-                    <span style="font-size: 11pt; font-family: Calibri, sans-serif;">#805 The default setting for
-                      “Retain input values when exiting” should be ON. Clicking the Restore Defaults button turns this
-                      setting off.</span></p>
                 </div>
               </div>
             </div>
-            <div class="field field-name-field-visibility field-type-taxonomy-term-reference field-label-above">
-              <div class="field-label">Visibility:&nbsp;</div>
-              <div class="field-items">
-                <div class="field-item even"><a href="/book-content-visibility/public" typeof="skos:Concept"
-                    property="rdfs:label skos:prefLabel" datatype="">Public</a></div>
-              </div>
-            </div>
-            <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above">
-              <div class="field-label">Tags:&nbsp;</div>
-              <div class="field-items">
-                <div class="field-item even"><a href="/tags/release-notes" typeof="skos:Concept"
-                    property="rdfs:label skos:prefLabel" datatype="">Release Notes</a></div>
-              </div>
-            </div>
-            <div class="watcher_node watcher_node_watched"><a
-                href="/user/2/watcher/toggle/748?destination=node/748&amp;token=FghAOZEB8w6OaEmS1FT3p88aiJ_6KB_b6F4r7t_b8xo"
-                class="watcher_node_toggle_watching_link watcher_node_toggle_watching_link_watched"
-                title="You are watching this page.  Visit your user profile for your watch list and settings.">You are
-                watching this page and will be emailed about updates, click to stop watching.</a></div>
-            <div id="book-navigation-40" class="book-navigation">
+    
 
 
 
