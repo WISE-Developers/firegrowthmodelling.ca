@@ -384,3 +384,10 @@ div.tabContent.hide {
 #footer a:hover, #footer a:active {
 	text-decoration: underline;
 }
+.warning {
+	border: 1px solid #ffe100;
+	border-radius: 6px 6px 6px 6px;
+	padding: 16px 16px 16px 16px;
+	background-color: var(--footer-bg-color);
+	margin: 10;
+}
