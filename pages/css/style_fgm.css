@@ -264,7 +264,7 @@ img.right {
 }
 
 p {
-	font-size: 0.875em;
+	/* font-size: 0.875em; */
 	font-style: normal;
 	font-weight: normal;
 	margin: 1.0em 16px 0.5em 16px;
@@ -414,4 +414,9 @@ div.tabContent.hide {
 	background-color: var(--footer-bg-color);
 	margin: 10;
 	text-shadow: 3px 3px 3px #333333;
+}
+
+.invertedColor{
+	-webkit-filter: invert(100%); /* Safari/Chrome */
+	filter: invert(100%);
 }
