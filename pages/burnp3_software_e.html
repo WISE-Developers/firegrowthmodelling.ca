@@ -1,197 +1,238 @@
-<!DOCTYPE html/>
-<html lang="en-CA"/>
+<!DOCTYPE html />
+<html lang="en-CA" />
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJW7J1JMP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJW7J1JMP"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'G-ERJW7J1JMP');
-</script>
-<meta charset="UTF-8"/>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> 
-<link rel="stylesheet" type="text/css" href="css/style_fgm.css" />
-<script type="text/javascript" src="js/dropdownMenu.js"></script>
-<script type="text/javascript" src="js/includes.js"></script>
-<script type="text/javascript" src="js/tabContent.js"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>FireGrowthModel.ca - Burn-P3</title>
+		gtag('config', 'G-ERJW7J1JMP');
+	</script>
+	<meta charset="UTF-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style_fgm.css" />
+	<script type="text/javascript" src="js/dropdownMenu.js"></script>
+	<script type="text/javascript" src="js/includes.js"></script>
+	<script type="text/javascript" src="js/tabContent.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>FireGrowthModel.ca - Burn-P3</title>
 </head>
+
 <body>
-<div id="container">
+	<div id="container">
 
-<div id="header">
-<a href="index.html" id="left">
-<img src="images/logo_fgm.png" alt="FireGrowthModel.ca"/>
-</a>
-<h1 id="left">Ahead of Wildland Fire</h1>
-</div>
+		<div id="header">
+			<a href="index.html" id="left">
+				<img src="images/logo_fgm.png" alt="FireGrowthModel.ca" />
+			</a>
+			<h1 id="left">Ahead of Wildland Fire</h1>
+		</div>
 
-<div id="banner">
-	<h1>Burn-P3</h1>
-	<img src="images/burnp3_banner.jpg" alt="" />
-</div>
-  <div include-html="parts/dropdownMenu.html"></div>
+		<div id="banner">
+			<h1>Burn-P3</h1>
+			<img src="images/burnp3_banner.jpg" alt="" />
+		</div>
+		<div include-html="parts/dropdownMenu.html"></div>
 
 
 
-<div id="content">
-  <a class="right" href="burnp3_software_f.html" lang="fr">Français</a>
-  
+		<div id="content">
+			<a class="right" href="burnp3_software_f.html" lang="fr">Français</a>
 
-<h1>Software</h1>
 
-<body onload="init()">
-  
-    <ul id="tabs">
-      <li><a href="#downloads">Downloads</a></li>
-      <li><a href="#requirements">Requirements</a></li>
-      <li><a href="#release_notes">Release Notes</a></li>
-    </ul>
+			<h1>Software</h1>
 
-    <div class="tabContent" id="downloads">
-	  <div>
+			<body onload="init()">
 
-	<h3>Current Version</h3>
+				<ul id="tabs">
+					<li><a href="#downloads">Downloads</a></li>
+					<li><a href="#requirements">Requirements</a></li>
+					<li><a href="#release_notes">Release Notes</a></li>
+				</ul>
 
-	<p>Burn-P3 2021.12.03 <span class="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J Safe</span> for 64-bit Windows operating systems was released Dec 2021.</p>
+				<div class="tabContent" id="downloads">
+					<div>
 
-	<ul class="download">
-		<!-- <li><a href="https://spyd.com/fgm.ca/BurnP3_2021.12.03_English.msi">Download Burn-P3 BurnP3 2021.12.03</a></li> -->
-		<li><a href="#">New BurnP3 Coming Soon!</a></li>
-	</ul>
-	
-	<h3>Important Installation Instructions</h3>
-	
-	<ul>
-		<li>Install <a href="prometheus_software_e.html">Prometheus 2021.12.03</a> (BurnP3 version must match the Prometheus Version or you will get an annoying messages on startup - but it will still work) and all associated software prerequistes on a 64-bit Windows computer that meets or exceeds minimum system requirements and perform a system restart.</li>
-		<li>Log on to your computer as a system administrator.</li>
-		<li>Uninstall any previous version of the Burn-P3 application from your computer.</li>
-		<li>Close all open applications and run <b>BurnP3_2021.12.03_English</b> <span class="file">[MSI - 5.36 MB]</span>. A Setup Wizard will guide you through the installation.</li>
-	</ul>
-		
-	<h3>Sample Data Set</h3>
+						<h3>Current Version</h3>
 
-	<p>Click the following link to download test files used in the Burn-P3 tutorial. These test files also serve as good examples when creating your own Burn-P3 data set.</p>
+						<p>Burn-P3 2021.08.00 <span class="w3-tag w3-padding w3-round-large w3-red w3-center">Log4J
+								Safe</span> for 64-bit Windows operating systems was released Aug 2021.</p>
 
-	<ul>
-		<li><a href="https://spyd.com/fgm.ca/test_files_englishV4_7.zip">test_files_englishV4_7</a> <span class="file"> [ZIP - 38.2 MB]</span></li>
-	</ul>
-	
-	<h3>Previous Releases</h3>
+						<ul class="download">
+							<li><a href="https://spyd.com/fgm.ca/BurnP3_2021.08.00_English.msi">Download Burn-P3
+									2021.08.00</a></li>
 
-	<ul>
-		<li><a href="https://spyd.com/fgm.ca/BurnP3_6.2.4.01_2019-07-19_English.msi">BurnP3_6.2.4.01_2019-07-19_English</a><span class="file">[MSI - 5.36 MB]</span></li>
-		<li><a href="https://spyd.com/fgm.ca/BurnP3_6.2.4_2019-01-22_English.msi">BurnP3_6.2.4_2019-01-22_English</a><span class="file"> [MSI - 5.36 MB]</span></li>
-		<li><a href="https://spyd.com/fgm.ca/BurnP3_4.7.4_2018-03-23_English.msi">BurnP3_4.7.4_2018-03-23_English</a><span class="file"> [MSI - 11.0 MB]</span></li>
-	</ul>
-		
-</div>    </div>
+						</ul>
+						<h3>Known Issues</h3>
+						<div class="warning">
+							<div class="w3-container w3-center">
+							<img src="images/Burn_P3_Warning.jpeg">
+						</div>
+							<br><br>
+							Please Note: You will experience this warning until we update the version check. Nothing to
+							worry about, Burn-P3 will function with version 12.03 of Prometheus, we are actively working
+							on updating the version checker. For now, press okay and continue using the model as you
+							normally would.
+							
+						</div>
 
-    <div class="tabContent" id="requirements">
-	  <div>
+						<h3>Important Installation Instructions</h3>
 
-<p>Your computer must meet or exceed the following system requirements in order to install and use Burn-P3.</p>
+						<ul>
+							<li>Install <a href="prometheus_software_e.html">Prometheus 2021.12.03</a> (BurnP3 version
+								must match the Prometheus Version or you will get an annoying messages on startup - but
+								it will still work) and all associated software prerequistes on a 64-bit Windows
+								computer that meets or exceeds minimum system requirements and perform a system restart.
+							</li>
+							<li>Log on to your computer as a system administrator.</li>
+							<li>Uninstall any previous version of the Burn-P3 application from your computer.</li>
+							<li>Close all open applications and run <b>BurnP3_2021.08.00_English.msi</b> <span
+									class="file">[MSI - 5.34 MB]</span>. A Setup Wizard will guide you through the
+								installation.</li>
+						</ul>
 
-	<table class="software">
-		<tr>
-			<th>Requirement</th>
-			<th>Minimum</th>
-			<th>Recommended</th>
-		</tr>
-		<tr>
-			<td>Operating System*</td>
-			<td>64-bit Windows 7 or</br>Windows Server 2008</td>
-			<td>64-bit Windows 10 or</br>Windows Server 2008 R2</td>
-		</tr>
-		<tr>
-			<td>Prometheus Software</td>
-			<td>Version 6.2.4</td>
-			<td>Version 6.2.4</td>
-		</tr>
-		<tr>
-			<td>Microsoft Software</td>
-			<td>.NET Framework 4.6</br>and</br>Visual C++ 2017 Redistributable (x64)</td>
-			<td>.NET Framework 4.7</br>and</br>Visual C++ 2017 Redistributable (x64)</td>
-		</tr>
-		<tr>
-			<td>Oracle Software</td>
-			<td>Java 8.0 for Windows (x64)</br>(Update 151)</td>	
-			<td>Java 8.0 for Windows (x64)</br>(Update 191)</td>
-		</tr>
-		<tr>
-			<td>Intel&#174; Software</td>
-			<td>2019 C++ Redistributable Library for Windows (x64)</br>(Initial Release: 19.0.117)</td>
-			<td>2019 C++ Redistributable Library for Windows (x64)</br>(Update 1: 19.1.144)</td>
-		</tr>
-		<tr>
-			<td>Processors</td>
-			<td>4 cores</td>
-			<td>4 hyper-threading cores</td>
-		</tr>
-		<tr>
-			<td>RAM</td>
-			<td>6 GB</td>
-			<td>12 GB</td>
-		</tr>
-		<tr>
-			<td>Hard Drive</td>
-			<td>10 GB</td>
-			<td>500 GB</td>
-		</tr>
-	</table>
+						<h3>Sample Data Set</h3>
 
-	<p><i>*32-bit operating systems are not supported.</i></p>
+						<p>Click the following link to download test files used in the Burn-P3 tutorial. These test
+							files also serve as good examples when creating your own Burn-P3 data set.</p>
 
-</div>    </div>
+						<ul>
+							<li><a href="https://spyd.com/fgm.ca/test_files_englishV4_7.zip">test_files_englishV4_7</a>
+								<span class="file"> [ZIP - 38.2 MB]</span></li>
+						</ul>
 
-    <div class="tabContent" id="release_notes">
-	  <div>
+						<h3>Previous Releases</h3>
 
-<h3>Changes in Burn-P3 6.2.4</h3>
+						<ul>
+							<li><a
+									href="https://spyd.com/fgm.ca/BurnP3_6.2.4.01_2019-07-19_English.msi">BurnP3_6.2.4.01_2019-07-19_English</a><span
+									class="file">[MSI - 5.36 MB]</span></li>
+							<li><a
+									href="https://spyd.com/fgm.ca/BurnP3_6.2.4_2019-01-22_English.msi">BurnP3_6.2.4_2019-01-22_English</a><span
+									class="file"> [MSI - 5.36 MB]</span></li>
+							<li><a
+									href="https://spyd.com/fgm.ca/BurnP3_4.7.4_2018-03-23_English.msi">BurnP3_4.7.4_2018-03-23_English</a><span
+									class="file"> [MSI - 11.0 MB]</span></li>
+						</ul>
 
-  <h4>New Features</h4>
+					</div>
+				</div>
 
-	<ul>
-		<li>Revised Process Control to provide more options to the user.</li>
-		<li>Revised grid communication with Prometheus to use smaller and faster TIF files.</li>
-		<li>Improved error handling for grass curing communication to Prometheus.</li>
-		<li>Added routines to support changes to data recovery from Prometheus. Several routines were changed to allow fire front information to be collected from any display time in the simulation.</li>
-		<li>Made changes to support API changes to green up in Prometheus.</li>
-		<li>Added Julian date management to season structures to support changes to green up.</li>
-		<li>Added ISI threshold to burn conditions.</li>
-		<li>Added decimal place control for raw output tables. Currently hard-coded, could be added to user interface if required.</li>
-		<li>Refinements to projection file handling and projection information propagation.</li>
-		<li>Show TIF file extensions on file loading dialog boxes where appropriate.</li>
-	</ul>
-	
-  <h4>Bug Fixes</h4>
+				<div class="tabContent" id="requirements">
+					<div>
 
-	<ul>
-		<li>Fixed bug associated with executing simulations beyond the end of a calendar year.</li>
-		<li>Fixed bug on fuel lookup table file load title.</li>
-		<li>Fixed bug which prevented changes to the season median dates in the dictionary.</li>
-	</ul>
-	
-</div>    </div>
+						<p>Your computer must meet or exceed the following system requirements in order to install and
+							use Burn-P3.</p>
 
-  </div>
+						<table class="software">
+							<tr>
+								<th>Requirement</th>
+								<th>Minimum</th>
+								<th>Recommended</th>
+							</tr>
+							<tr>
+								<td>Operating System*</td>
+								<td>64-bit Windows 7 or</br>Windows Server 2008</td>
+								<td>64-bit Windows 10 or</br>Windows Server 2008 R2</td>
+							</tr>
+							<tr>
+								<td>Prometheus Software</td>
+								<td>Version 6.2.4</td>
+								<td>Version 6.2.4</td>
+							</tr>
+							<tr>
+								<td>Microsoft Software</td>
+								<td>.NET Framework 4.6</br>and</br>Visual C++ 2017 Redistributable (x64)</td>
+								<td>.NET Framework 4.7</br>and</br>Visual C++ 2017 Redistributable (x64)</td>
+							</tr>
+							<tr>
+								<td>Oracle Software</td>
+								<td>Java 8.0 for Windows (x64)</br>(Update 151)</td>
+								<td>Java 8.0 for Windows (x64)</br>(Update 191)</td>
+							</tr>
+							<tr>
+								<td>Intel&#174; Software</td>
+								<td>2019 C++ Redistributable Library for Windows (x64)</br>(Initial Release: 19.0.117)
+								</td>
+								<td>2019 C++ Redistributable Library for Windows (x64)</br>(Update 1: 19.1.144)</td>
+							</tr>
+							<tr>
+								<td>Processors</td>
+								<td>4 cores</td>
+								<td>4 hyper-threading cores</td>
+							</tr>
+							<tr>
+								<td>RAM</td>
+								<td>6 GB</td>
+								<td>12 GB</td>
+							</tr>
+							<tr>
+								<td>Hard Drive</td>
+								<td>10 GB</td>
+								<td>500 GB</td>
+							</tr>
+						</table>
 
- <div include-html="parts/footer_e.html"></div>
+						<p><i>*32-bit operating systems are not supported.</i></p>
 
-</div>
-</div>
-<script type="text/javascript" defer>
-  includeHTML();
-  waitForElm('#menu').then(() => {
-      dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
-  });       
-</script>
+					</div>
+				</div>
+
+				<div class="tabContent" id="release_notes">
+					<div>
+
+						<h3>Changes in Burn-P3 2021.08.00</h3>
+
+						<h4>New Features</h4>
+
+						<ul>
+							<li>Coming soon...</li>
+							<!-- <li>Revised Process Control to provide more options to the user.</li>
+							<li>Revised grid communication with Prometheus to use smaller and faster TIF files.</li>
+							<li>Improved error handling for grass curing communication to Prometheus.</li>
+							<li>Added routines to support changes to data recovery from Prometheus. Several routines
+								were changed to allow fire front information to be collected from any display time in
+								the simulation.</li>
+							<li>Made changes to support API changes to green up in Prometheus.</li>
+							<li>Added Julian date management to season structures to support changes to green up.</li>
+							<li>Added ISI threshold to burn conditions.</li>
+							<li>Added decimal place control for raw output tables. Currently hard-coded, could be added
+								to user interface if required.</li>
+							<li>Refinements to projection file handling and projection information propagation.</li>
+							<li>Show TIF file extensions on file loading dialog boxes where appropriate.</li> -->
+						</ul>
+
+						<h4>Bug Fixes</h4>
+
+						<ul>
+							<li>Coming soon...</li>
+							<!-- <li>Fixed bug associated with executing simulations beyond the end of a calendar year.</li>
+							<li>Fixed bug on fuel lookup table file load title.</li>
+							<li>Fixed bug which prevented changes to the season median dates in the dictionary.</li> -->
+						</ul>
+
+					</div>
+				</div>
+
+		</div>
+
+		<div include-html="parts/footer_e.html"></div>
+
+	</div>
+	</div>
+	<script type="text/javascript" defer>
+		includeHTML();
+		waitForElm('#menu').then(() => {
+			dropdown = new TINY.dropdown.init("dropdown", { id: 'menu', active: 'menuhover' });
+		});       
+	</script>
 </body>
+
 </html>
