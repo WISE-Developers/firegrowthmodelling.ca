@@ -2,15 +2,25 @@
 <html lang="en-CA" />
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJW7J1JMP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERJW7J1JMP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-ERJW7J1JMP');
-</script>
+    gtag('config', 'G-ERJW7J1JMP');
+
+    function toggleVis(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+  </script>
   <meta charset="UTF-8" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -52,49 +62,161 @@
 
 
       <div class="w3-justify">
-        Wildfire Intelligence and Simulation Engine (W.I.S.E.) is modern wildfire simulation Engine (Formerly Known as Prometheus as a Service or PSaaS). Think of W.I.S.E. as a modelling engine.
-        <p></p> 
+        Wildfire Intelligence and Simulation Engine (W.I.S.E.) is modern wildfire simulation Engine (Formerly Known as
+        Prometheus as a Service or PSaaS). Think of W.I.S.E. as a modelling engine.
+        <p></p>
         W.I.S.E. is used operationally by the Govt of the Northwest Territories, Forest Management Division
         Headquarters, Fire Science Section to create a Standardized Growth Potential models which basically
         provide a best case and worst case scenario of 24 hours unrestricted growth based on current indexes and
         forecasted weather using a predetermined template.
         <br><br>
-        
-         The <a href="https://www.enr.gov.nt.ca/en/services/wildfire-operations" target="new">Government of the Northwest Territories</a> is currently the lead agency, custodian  and legal intellectual property rights holder of W.I.S.E..</p>
+
+        The <a href="https://www.enr.gov.nt.ca/en/services/wildfire-operations" target="new">Government of the
+          Northwest Territories</a> is currently the lead agency, custodian and legal intellectual property rights
+        holder of W.I.S.E..
+        </p>
         <br><br>
-        <div class="w3-center">
-      <img src="images/2022-webinar.png" width="300px" alt="2022 Webinar"><br>
+        <hr>
+        <h2>Press:</h2>
+        <h3 onclick="toggleVis('press-1')">
+          <span class="w3-tag w3-round w3-green w3-border w3-border-white">Jan 19, 2023:</span> Initial Public Open
+          Source Release of WISE 1.0 Beta
+        </h3>
+        <div id="press-1" class="w3-container w3-hide">
+
+          <p><span>Jan 19, 2023</span></p>
+          <p></p>
+          <p><span>The WISE Steering Committee, on behalf of the entire Project Team is proud to announce
+              the initial release of WISE 1.0-Beta Open Source.</span></p>
+          <p></p>
+          <p><span>This monumental milestone has always been on our radar and after 15 long years, we have
+              at long last arrived. </span></p>
+          <p></p>
+          <p><span>The core concepts of WISE were first cemented in 2007 at a Prometheus Fire Modelling
+              course in Hinton Alberta when Franco Nogarin first met Cordy Tymstra and &nbsp;Neal McLoughlin from the
+              Government of Alberta (GOA) and Robert Bryce of Heartland Software Solutions (HSS) and the idea was
+              introduced,
+              discussed formally and dismissed as far too ambitious at the time, but Franco and Rob continued to play
+              with the
+              idea and discuss the potential every time they could.</span></p>
+          <p></p>
+          <p><span>It was further pushed along in 2012 when Franco Presented a poster on the potential of
+              Prometheus automation on behalf of the Government of the Northwest Territories (GNWT) at the Wildland Fire
+              Conference in Halifax Nova Scotia. There Franco met Brett Moore (GOA) and Dan Thompson of the Canadian
+              Forest
+              Service (CFS) for the first time, both were supportive of the idea and the subsequent discussion on the
+              potential convinced the GNWT to move forward.</span></p>
+          <p></p>
+          <p><span>In Early 2014, Franco and Neal worked out the legal rules of engagement for the GNWT to
+              start a new project based off of Prometheus&nbsp;and the project was officially approved by the GOA and
+              GNWT.</span></p>
+          <p></p>
+          <p><span>In June 2014 We began the work. With the very first contract between the GNWT and Robert
+              Bryce of HSS (The developer of Prometheus) to build the initial proof of concept. </span></p>
+          <p></p>
+          <p><span>Many contracts, tons of work, about a half a million dollars and 8.5 years later We
+              arrived here.</span></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p><span>It has taken a lot to get here. </span></p>
+          <p></p>
+          <p><span>Winning people over to this idea was not easy. In the beginning the fire science
+              community rejected this work as unimportant. We basically went on tour to drum up support for the concept
+              and
+              the community development ideas that went with it. </span></p>
+          <p></p>
+          <p><span>Financially, the development of WISE was not cheap. Nor was coming by the capital easy.
+              This project would never have succeeded without its financial backing from the four founding agency
+              partners:</span></p>
+          <ul>
+            <li><span>The Government of the Northwest Territories</span></li>
+            <li><span>The Government of New Zealand (SCION Research)</span></li>
+            <li><span>The Government of Alberta</span></li>
+            <li><span>The Government of Saskatchewan<br></span></li>
+          </ul>
+          <p><span>These agencies provided our project with continuous funding that allowed us to keep
+              moving forward, keep the lights on and eventually arrive here today.</span></p>
+          <p></p>
+          <p><span>Then there is the &ldquo;In-Kind&rdquo; contributions, these folks have provided
+              significant human resources, digital infrastructure, free coding and or code contributions to this
+              project. Our
+              champions there are:</span></p>
+          <p></p>
+          <ul>
+            <li><span>The Government of the Northwest Territories</span></li>
+            <li><span>The Government of Alberta</span></li>
+            <li><span>The Canadian Forest Service </span></li>
+            <li><span>Heartland Software Solutions</span></li>
+            <li><span>The Government of British Columbia</span></li>
+            <li><span>The Canadian Interagency Forest Fire Centre.</span></li>
+          </ul>
+          <p></p>
+          <p><span>Our Project team has been meeting bi-monthly for a long time and this team has done a
+              great job of supporting the Steering Committee in making this happen, a big thanks to our team! - the
+              Active
+              Project Team is:<br><br>Franco Nogarin (Government of the Northwest Territories)</span></p>
+          <p><span>Neal McLoughlin (Government of British Columbia)</span></p>
+          <p><span>Brett Moore (Canadian Forest Service)</span></p>
+          <p><span>Robert Bryce (Heartland Software Solutions)</span></p>
+          <p><span>Elizabeth Chapman (Government of Alberta)</span></p>
+          <p><span>Robert Kruus (Government of Saskatchewan)</span></p>
+          <p><span>Brad Armitage (Ember Research Services)</span></p>
+          <p><span>Jordan Evans (Canadian Forest Service)</span></p>
+          <p><span>Robert Jagodzinski (Canadian Forest Service)<br>Veronica Clifford (Government of New
+              Zealand - SCION Research)</span></p>
+          <p><span>Wayne Schou (Government of New Zealand - SCION Research)</span></p>
+          <p></p>
+          <p><span>For more information on the WISE Project, you can:</span></p>
+          <p></p>
+          <ul>
+            <li><span>Follow us on Twitter @WISEProject2</span></li>
+            <li><span>Visit us Facebook: </span><span><a
+                  href="https://www.facebook.com/profile.php?id%3D100089752445503">WISE Project</a></span></li>
+            <li><span>Visit us on the </span><span><a
+                  href="https://firegrowthmodel.ca/pages/wise_overview_e.html">firegrowthmodelling.ca</a></span><span>&nbsp;website.
+              </span></li>
+            <li><span>Join us on our </span><span><a href=https://discord.gg/HTfn6MGyCb">Discord
+                  Server</a></span></li>
+            <li><span>Check us out on </span><span><a href="https://github.com/WISE-Developers">Github</a></span>
+            </li>
+            <li><span>Watch </span><span><a href="https://www.youtube.com/watch?v%3DGQmxYqvjBTg">our
+                  webinar on YouTube</a></span><span>&nbsp;</span><span>&nbsp;published by Canada
+                Wildfire!</span></li>
+          </ul>
+          </p>
         </div>
-        We held a public webinar in late 2022 to introduce W.I.S.E. to the public. 
-        The webinar recording (Courtesy of Canada Wildfire) is available <a href="https://www.youtube.com/watch?v=GQmxYqvjBTg" target="_blank">on YouTube!</a>
+        <h2>Media:</h2>
+        <h3 onclick="toggleVis('media-1')">
+          <span class="w3-tag w3-round w3-green w3-border w3-border-white">Nov 18, 2022:</span> WISE Webinar on YouTube (Canada Wildfire)
+        </h3>
+        <div id="media-1" class="w3-container w3-hide">
+        <div class="w3-center">
+          <img class="w3-round-large" src="images/2022-webinar.png" width="300px" alt="2022 Webinar"><br>
+        </div><br>
+        We held a public webinar in late 2022 to introduce W.I.S.E. to the public.
+        The webinar recording (Courtesy of Canada Wildfire) is available <a
+          href="https://www.youtube.com/watch?v=GQmxYqvjBTg" target="_blank">on YouTube!</a>
         </a>
-<br><br>
-        Wildfire Intelligence and Simulation Engine (W.I.S.E.) Project or WISE Project for short, provides a modern modeling framework that:
+        <br>
+      </div>
+        <hr>
+        <br>
+        Wildfire Intelligence and Simulation Engine (W.I.S.E.) Project or WISE Project for short, provides a modern
+        modeling framework that:
 
         <li>Speeds up modeling</li>
-
         <li>Makes modeling scriptable</li>
-
         <li>Provides batch, iteration and perturbation functionality.</li>
-
         <li>Read and write open and standards based data.</li>
-
         <li>Allow it to be integrated into other applications as a service.</li>
-
         <li>Preserves and Leverages Prometheus Modeling Training and Experience.</li>
-
         <li>Save on human resource effort and lower modeling costs</li>
-
         <li>Free modelers from restrictions of modeling at a windows desktop Prometheus installation.</li>
-
         <li>Allows for a totally custom user interface in language/platform of choice.</li>
-
         <li>Give back to the Prometheus Community.</li>
-
-
       </div>
       <a href="wise_documentation_e.html">Learn more...</a></p>
-
     </div>
 
     <div include-html="parts/footer_e.html"></div>
