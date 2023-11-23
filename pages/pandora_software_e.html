@@ -56,7 +56,7 @@
     <div class="tabContent" id="downloads">
 	  <div>
 
-  <p>Pandora 2021.12 was released on December, 2021. Pandora parameter files from versions before 3.6 may not work with 2021.12 Check the help file for details.</p>
+  <p>Pandora 2021.12 was released on April 2, 2022. Pandora parameter files from versions before 3.6 may not work with 2021.12 Check the help file for details.</p>
   
   <ul class="download">
 	<li><a href="https://spyd.com/fgm.ca/pandora2021.12.zip">Download Pandora 2021.12</a></li>
@@ -81,7 +81,16 @@
 	  <div>
 
       <h3>Changes in Pandora 2021.12</h3>
-      <h4>Coming soon</h4>
+      
+      <ul>
+        <li>Accepts wind speed and direction grids</li>
+        <li>Option for faster processing when running multiple fires on the same landscape</li>
+        <li>User can specify number of threads used for simulation</li>
+        <li>Accepts input grids in TIF format. (Alas, output grids are still ASC.)</li>
+        <li>Ignition locations can be provided in KML format (as well as SHP)</li>
+        <li>Minimum fire size can be specified, such that no outputs are produced for smaller fires</li>
+        <li>To facilitate identification of fires in the output shape file, ignitions are named according to their original file names (if they were files) and the scenario name is set to the name of the fire as specified in the Pandora parameters file</li>
+      </ul>
 
 <h3>Changes in Pandora 6.2.4</h3>
 
